@@ -18,7 +18,7 @@ public class H2DatabaseInitializer {
   
     @PostConstruct
     private void initializeDatabaseDirectory() {
-    	System.out.println("rodou essa trolha");
+    
         // Use regex para extrair o caminho do URL do banco de dados H2
         Pattern pattern = Pattern.compile("jdbc:h2:file:(.+?);");
         Matcher matcher = pattern.matcher(h2DatabaseUrl);
